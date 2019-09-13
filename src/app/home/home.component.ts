@@ -16,30 +16,29 @@ export class HomeComponent implements OnInit {
   { id: 5, firstName: 'Melek', lastName: 'Kılıç', username: 'melek', role: 'Frontend Team' },
   { id: 6, firstName: 'Jale', lastName: 'Aslan', username: 'jale', role: 'Frontend Team' },
   { id: 7, firstName: 'Meriç', lastName: 'Kaptan', username: 'meriç', role: 'Frontend Team' },
-  { id: 8, firstname: 'Mustafa', lastname: 'Akocak' username: 'akocak' role: 'Backend Team'}
 
-  ]; 
+  ];
 
-  
+
 
   filteredpersons = this.persons;
 
-  backendbuttononclick(){ 
+  backendbuttononclick(){
    this.filteredpersons = this.persons.filter(x=>x.role=='Backend Team');
   }
 
-   
+
  frontendbuttononclick(){
    this.filteredpersons = this.persons.filter(x=>x.role=='Frontend Team');
   }
-  
 
-   
+
+
  testbuttononclick(){
    this.filteredpersons = this.persons.filter(x=>x.role=='Test Team');
-  
+
  }
-    
+
   allbuttononclick(){
    this.filteredpersons = this.persons;
   }
