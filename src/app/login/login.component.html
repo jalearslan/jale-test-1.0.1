@@ -1,0 +1,30 @@
+<div  style="width:600px; height: 300px; padding: 40px; background-color:grey; position: absolute; top: 50%; left: 50%; margin-left: -300px; margin-top: -150px;">
+     
+
+  <h2>{{text}}
+  </h2>
+  <form id = "contact form " [formGroup]= "contactForm" (ngSubmit)="onSubmit()" novalidate>
+  <div class = "form-group">
+      <label class= "center-block">Username:
+          <input class="form-control" formControlName="Username">
+      </label>
+      
+  </div>
+  <div class = "form-group">
+        
+          <label class="center-block">Password:
+              <input class="form-control"formControlName="Password" type="password">
+          </label>
+      </div>
+  <button type="login"
+          [disabled]="!contactForm.valid" class="btn btn-success">Login</button>
+  
+  </form>                     
+  
+  </div>
+  
+  
+  
+  
+  
+  

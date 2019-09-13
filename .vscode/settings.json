@@ -1,0 +1,6 @@
+{
+    "eslint.quiet": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.lintTask.enable": true
+}
